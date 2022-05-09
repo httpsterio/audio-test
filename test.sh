@@ -1,1 +1,1 @@
-./bin/awf -i test.mp3 -o test1.png -z 256 -b 8
+./bin/awf -i funkytest.mp3 -o funky.png -z 256 -b 8
