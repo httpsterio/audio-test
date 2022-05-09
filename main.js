@@ -29,20 +29,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     button.addEventListener('click', wavesurfer.playPause.bind(wavesurfer));
 });
-
-fetch('funky.json')
-.then(response => {
-    if (!response.ok) {
-        throw new Error("HTTP error " + response.status);
-    }
-    return response.json();
-})
-.then(peaks => {
-    console.log('loaded peaks! sample_rate: ' + peaks.sample_rate);
-
-    // load peaks into wavesurfer.js
-    wavesurfer.load(mediaElt, peaks.data);
-})
-.catch((e) => {
-    console.error('error', e);
-});
