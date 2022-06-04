@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Load audio from URL
-    wavesurfer.load('funkytest.wav');
+    wavesurfer.load('/audio/audio1.mp3');
 
     // Play button
     const button = document.querySelector('[data-action="play"]');
